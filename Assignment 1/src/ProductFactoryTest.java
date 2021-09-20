@@ -28,19 +28,28 @@ public class ProductFactoryTest {
 
     public static void main(String[] args) throws FileNotFoundException {
         Scanner scanner = new Scanner(new File("./prices.csv"));
+
+        // THIS IS WHY WE WERE GETTING THE STATIC ERRORS...
+        // We need an instance of the ProductFactoryTest object.... now it works
+        ProductFactoryTest factorytest = new ProductFactoryTest();
+
         //scanner.useDelimiter(",");
         while(scanner.hasNext()){
 
             String line = scanner.next();
             String[] lineParts = line.split(",");
             
-            System.out.println(lineParts[0]);
+            //System.out.println(lineParts[0]);
             //System.out.println(lineParts[1]);
 
-            System.out.println(Float.parseFloat(lineParts[1]));
+            //System.out.println(Float.parseFloat(lineParts[1]));
 
             if(lineParts[0].contains("desktop")){
                 System.out.println("YAY");
+
+                factorytest.desktopPrice = Float.parseFloat(lineParts[1]);
+                
+                System.out.println(factorytest.desktopPrice);
             }
 
             
