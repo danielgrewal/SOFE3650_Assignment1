@@ -45,11 +45,19 @@ public class ProductFactoryTest {
             //System.out.println(Float.parseFloat(lineParts[1]));
 
             if(lineParts[0].contains("desktop")){
-                System.out.println("YAY");
+                System.out.println("YAY FOUND A DESKTOP");
 
                 factorytest.desktopPrice = Float.parseFloat(lineParts[1]);
-                
+
                 System.out.println(factorytest.desktopPrice);
+            }
+
+            else if(lineParts[0].contains("laptop")){
+                System.out.println("YAY FOUND A LAPTOP");
+
+                factorytest.laptopPrice = Float.parseFloat(lineParts[1]);
+
+                System.out.println(factorytest.laptopPrice);
             }
 
             
