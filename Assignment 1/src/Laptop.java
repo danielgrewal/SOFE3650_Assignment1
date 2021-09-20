@@ -5,4 +5,8 @@ public class Laptop implements Computer {
     public Laptop(float price) {
         this.price = price;
     }
+
+    public float getPrice() {
+        return this.price;
+    }
 }

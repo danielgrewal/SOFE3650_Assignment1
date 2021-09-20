@@ -6,4 +6,8 @@ public class Desktop implements Computer {
     public Desktop(float price) {
         this.price = price;
     }
+
+    public float getPrice() {
+        return this.price;
+    }
 }
