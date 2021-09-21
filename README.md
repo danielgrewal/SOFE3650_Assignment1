@@ -20,6 +20,6 @@ https://drive.google.com/file/d/1kG8kNvfH3iI48XfMMAlb7jb_iu8_ZrKI/view?usp=shari
 
 ///// DESCRIPTION FOR ASSIGNMENT 1 /////
 
-For this assignment we have demonstrated the Abstract Factory and Factory Method patterns for implementing a ProductFactory class. We have designed a ProductFactory interface for creating Computers of two types; Desktops and Laptops. A CSV file with a list of Computer types and their respective price amount is used as our 'database', as outlined in the Assignment 1 requirements.
+For this assignment we have implemented and demonstrated the Abstract Factory and Factory Method patterns. We have designed a ProductFactory interface for creating Computers of two types; Desktops and Laptops. A CSV file with a list of Computer types and their respective price amount is used as our 'database', as outlined in the Assignment 1 requirements. We then designed a test to ensure that our code is functional. A screen dump of our tests passing is included.
 
 Our tests demonstrate that the code works using our example above. The price of each product is set and read from our CSV file as we create products.
